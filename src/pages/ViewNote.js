@@ -3,6 +3,7 @@ import { db } from "../services/firebaseConfig";
 import { doc, getDoc, deleteDoc } from "firebase/firestore";
 import { useParams } from "react-router-dom";
 
+
 const ViewNote = () => {
     const { id } = useParams();
     const [passcode, setPasscode] = useState("");
