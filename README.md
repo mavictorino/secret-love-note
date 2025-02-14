@@ -2,7 +2,7 @@
 
 A fun and romantic web app that lets users create and share secret love notes with a unique link. The recipient can access the note and feel the love! ❤️
 
-![Screenshot of the project](public\screenshot-lovenote.png)
+![Screenshot of the project](public/screenshot-lovenote.png)
 
 ## Features
 
