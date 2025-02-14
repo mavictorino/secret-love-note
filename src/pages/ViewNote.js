@@ -36,15 +36,15 @@ const ViewNote = () => {
     };
 
     return (
-        <div>
+        <div className="message">
             {message ? (
                 <div>
-                    <h3>💌 Your secret love message:</h3>
-                    <p>{message}</p>
+                    <h2>💌 Your secret love message:</h2>
+                    <p className="text-message">{message}</p>
                 </div>
             ) : (
-                <div>
-                    <p>Enter passcode to unlock:</p>
+                <div className="unlock">
+                    <h2>Enter passcode to unlock:</h2>
                     <input
                         type="password"
                         value={passcode}
