@@ -43,8 +43,8 @@ const ViewNote = () => {
                     <p className="text-message">{message}</p>
                 </div>
             ) : (
-                <div className="unlock">
-                    <h2>Enter passcode to unlock:</h2>
+                <div>
+                    <p>Enter passcode to unlock:</p>
                     <input
                         type="password"
                         value={passcode}
@@ -54,8 +54,9 @@ const ViewNote = () => {
                     {error && <p style={{ color: "red" }}>{error}</p>}
                 </div>
             )}
+            
         </div>
     );
-};
+}
 
 export default ViewNote;

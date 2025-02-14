@@ -2,13 +2,18 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NoteForm from './components/NoteForm';
 import NoteCreated from './components/NoteCreated';
 import ViewNote from './pages/ViewNote';
-import { useState } from 'react';
+import { initHeartCursor } from './components/HeartCursor';
+import { useState, useEffect } from 'react';
 
 import './App.css';
 
 function App() {
 
   const [noteId, setNoteId] = useState(null);
+  
+  useEffect(() => {
+    initHeartCursor();
+  }, []);
 
   return (
     <Router>
