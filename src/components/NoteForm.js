@@ -24,6 +24,7 @@ const NoteForm = ({ onNoteCreated }) => {
     };
 
     return (
+        <div className="form-container">
         <form onSubmit={handleSubmit}>
             <textarea
                 placeholder="Write your secret love note..."
@@ -42,6 +43,7 @@ const NoteForm = ({ onNoteCreated }) => {
 
 
         </form>
+        </div>
     );
 };
 
